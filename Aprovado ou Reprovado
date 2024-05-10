@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        double A = scanner.nextDouble();
+        double B = scanner.nextDouble();
+        double media = (A + B) / 2;
+        if (media >= 4 && media < 7) {
+            System.out.println("Recuperacao");
+        } else if (media < 4) {
+            System.out.println("Reprovado");
+        } else {
+            System.out.println("Aprovado");
+        }
+        scanner.close();
+    }
+}
